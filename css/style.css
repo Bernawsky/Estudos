@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   background: linear-gradient(40deg,#651366, #750e49); 
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.container{
+    margin: 20vh auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 70%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(3px);
+}
+
+.titulo{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 7vh;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 100;
+    font-style: italic;
+    font-family: 'Trebuchet MS', serif;
+}
+
+.btns{
+    display: flex;
+    justify-content: space-around;
+}
+
+.btns button{
+    background-color: #651366;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 20px;
+}
+
+
+.btns button:hover,.btns button:active{
+    background-color: #750e49;
+}
+
+#nao-1{
+    display: flex;
+    margin-right: 20px;
+}
+
+#nao-2{
+    display: none;
+    position: relative;
+    top: 10vh;
+}
+
+#nao-3{
+    display: none;
+    position: relative;
+    top: 10vh;
+    left: 20vh;
+}
+
+#nao-4{
+    display: none;
+    position: relative;
+    bottom: 8vh;
+}
+
+/*Parábens*/
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.container-2{
+    margin: 20vh auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 70%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(3px);
+}
+
+.titulo-2{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 7vh;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 100;
+    font-style: italic;
+    font-family: 'Trebuchet MS', serif;
+}
+
+.titulo-2 p{
+    font-size: 14px;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    top: 30px;
+    font-size: 140px;
+}
+
+.coracao-cheio{
+    color: red;
+    display: flex;
+    position: absolute;
+    animation: encher 2.3s infinite;
+}
+
+@keyframes encher {
+    from{
+        opacity: 0;
+        transform: scale(0.0);
+    }
+    50%{
+        opacity: 1;
+        transform: scale(1.1);
+    }
+
+    to{
+        opacity: 0;
+        transform: scale(0.0);
+    }
+}
+
+.voltar{
+    position: relative;
+    bottom: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.voltar button{
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 30px;
+    background-color: #651366;
+    border: none;
+    border-radius: 20px;
+}
+
+.voltar button:hover,.voltar button:checked{
+    background-color: #750e49;
+}
+
+button{
+    cursor: pointer;
+}
